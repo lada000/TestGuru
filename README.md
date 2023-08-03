@@ -24,24 +24,19 @@ The application encompasses several entities that form the core of the TestGuru 
 
 # Change Log for Project
 
-## Updates for July 27, 2023
+## What we did today:
 
-Today we accomplished quite a bit on the project:
+### 1. Database seeding:
 
-1. **Creation of Database and Tables in SQL:** We used PostgreSQL to create a new database. Within this database, we created several tables to store our data. These tables include 'categories', 'tests', 'questions', and 'answers'.
+We created a set of initial data for all existing models in the `db/seeds.rb` file. This data is used to populate our database with sample data for testing and development purposes.
 
-2. **Data Insertion:** After creating the tables, we inserted several rows of data into each one.
+### 2. Model methods:
 
-3. **SQL Queries and Commands:** We learned and executed various SQL queries and commands. These included `SELECT`, `INSERT`, `JOIN`, and `LEFT JOIN`.
+We implemented a class method titles_by_category in the Test model. This method returns an array of test titles for a given category title, sorted in descending order.
 
-4. **Understanding SQL Concepts:** We reviewed several important SQL concepts like the differences between `LEFT JOIN` and `INNER JOIN`, usage of `ABS` function, the use of `FOREIGN KEYS`, the concept of `NULL`, and understanding the error messages when constraints are violated.
+### 3. Other updates:
 
-5. **Creating Rails Models:** We created Rails models for 'Test', 'Question', 'Answer', 'User', and 'Category'. Each model has attributes relevant to their respective real-world entity.
-
-6. **Setting Default Values through Migrations:** For our 'Test' and 'Answer' models, we created new migrations to set default values for certain attributes. 'Level' attribute in 'Test' model has a default value of 1, and 'correct' attribute in 'Answer' model has a default value of `false`.
-
-Throughout this process, we learned and practiced a great deal of SQL and Rails, which will serve as a strong foundation moving forward in the project.
-
+We also made several minor updates to the project, including updating the README file and continuing to refine our understanding of Ruby, SQL, and Rails.
 
 ## Final Notes
 
